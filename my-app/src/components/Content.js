@@ -14,10 +14,6 @@ export class Content extends Component {
     }
 
     componentDidMount() {
-        this.getData()
-    }
-
-    getData () {
         setTimeout(() => {
             this.setState({
                 isLoaded: true
@@ -33,19 +29,10 @@ export class Content extends Component {
                 </div>
                 <div className={css.SearchResults}>
                     {
-                    this.state.isLoaded ? <Postitems savedPosts = {savedPosts} /> : <Loader />
+                        this.state.isLoaded
+                        ? <Postitems savedPosts = {savedPosts} /> 
+                        : <Loader />
                     }
-                    {/* {
-                        savedPosts.map((post) => {
-                            return (
-                                <div key={post.title} className={css.SearchItem}>
-                                    <p>Title: {post.title}</p>
-                                    <p>Author: {post.name}</p>
-                                    <img src={post.image}></img>
-                                    <p>Description: {post.description}</p>
-                                </div>
-                        )})
-                    } */}
                 </div>
             </div>
         )
