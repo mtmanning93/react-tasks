@@ -3,19 +3,17 @@ import Content from './components/Content';
 import ContentHooks from './components/ContentHooks';
 import Loader from './components/Loader';
 import NavBarForm from './components/NavBarForm';
-// import NavBarSimple from './components/NavBarSimple';
 import SideBar from './components/Sidebar';
+import ContentAPI from "./components/ContentAPI";
+import ContentAPIHooks from './components/ContentAPIHooks';
 
 function App() {
   return (
     <div className={css.App}>
-      {/* Add your components here */}
-      {/* <NavBarSimple /> */}
       <SideBar />
       <NavBarForm />
-      <ContentHooks />
-      {/* <Content /> */}
-      {/* <Loader /> */}
+      {/* <ContentAPI /> */}
+      <ContentAPIHooks />
     </div>
   );
 }
