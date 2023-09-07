@@ -1,5 +1,6 @@
 import css from './App.module.css';
 import Content from './components/Content';
+import ContentHooks from './components/ContentHooks';
 import Loader from './components/Loader';
 import NavBarForm from './components/NavBarForm';
 // import NavBarSimple from './components/NavBarSimple';
@@ -12,7 +13,8 @@ function App() {
       {/* <NavBarSimple /> */}
       <SideBar />
       <NavBarForm />
-      <Content />
+      <ContentHooks />
+      {/* <Content /> */}
       {/* <Loader /> */}
     </div>
   );
